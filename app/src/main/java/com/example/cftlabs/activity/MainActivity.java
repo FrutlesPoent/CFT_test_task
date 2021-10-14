@@ -58,11 +58,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void isData(){
+        int noData = 0;
         settings = getSharedPreferences(APP_SETTINGS,MODE_PRIVATE);
-        String saved = settings.getString(USER_NAME, "Вы впервые зарегистрировались");
         name = settings.getString(USER_NAME, "Вы впервые зарегестрировались");
+        System.out.println(name);
         secondName = settings.getString(USER_SEC_NAME, "Вы впервые зарегестрировались");
-        if (!saved.equals("Вы впервые зарегистрировались")){
+        if (name.equals("Вы впервые зарегестрировались"))
+            noData = 1;
+        if (noData == 0){
             nextWindow();
         }
     }

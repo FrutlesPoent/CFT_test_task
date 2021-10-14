@@ -24,7 +24,7 @@ public class SecondActivity extends AppCompatActivity {
         dialog.setTitle("Hello");
         dialog.setContentView(R.layout.dialog);
         Bundle extra = getIntent().getExtras();
-        String name = extra.getString("YourName") + " " + extra.getString("YourSecName");
+        String name = "Привет," + " " +  extra.getString("YourName") + " " + extra.getString("YourSecName");
         TextView text = dialog.findViewById(R.id.name);
         text.setText(name);
         dialog.show();
