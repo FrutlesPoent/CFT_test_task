@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">cftLabs</string>
+    <string name="first_name">Имя</string>
+    <string name="second_name">Фамилия</string>
+    <string name="birthday">День рождения</string>
+    <string name="password">Пароль</string>
+    <string name="registration">Регистрация</string>
+    <string name="required">Необходимо для заполнения*</string>
+    <string name="greetings">Приветствие</string>
+    <string name="close">Закрыть</string>
+</resources>
